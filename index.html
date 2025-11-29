@@ -53,7 +53,7 @@
         </div>
       </article>
 
-      <!-- لو تريد منتج آخر يمكن تكراره -->
+      <!-- منتج 2 -->
       <article class="product-card">
         <div class="product-gallery">
           <img id="mainImage-2" class="mainImage" src="images/sub2.svg" alt="غواصة نموذجية 2" />
@@ -82,6 +82,40 @@
           </div>
         </div>
       </article>
+
+      <!-- منتج 3: غواصة قراند -->
+      <article class="product-card">
+        <div class="product-gallery">
+          <img id="mainImage-3" class="mainImage" src="images/sub_gtav.svg" alt="غواصة قراند" />
+          <div class="thumbs">
+            <img onclick="setMainImage('mainImage-3','images/sub_gtav.svg')" src="images/sub_gtav.svg" alt="صورة غواصة قراند 1" />
+            <img onclick="setMainImage('mainImage-3','https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=240&auto=format&fit=crop" alt="صورة غواصة قراند 2" />
+            <img onclick="setMainImage('mainImage-3','https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=240&auto=format&fit=crop" alt="صورة غواصة قراند 3" />
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h2 class="product-title">غواصة قراند</h2>
+          <p class="product-desc">غواصه تجيب لك فلوس — تستخدم في مهام Roleplay لزيادة أرباحك داخل اللعبة (عرض قانوني تعليمي).</p>
+
+          <ul class="specs">
+            <li><strong>الطاقم:</strong> 1-4</li>
+            <li><strong>أقصى عمق (تقديري):</strong> 300 متر</li>
+            <li><strong>السرعة تحت الماء:</strong> 8 عقدة (تقديري)</li>
+          </ul>
+
+          <div class="price-row">
+            <span class="price-label">السعر:</span>
+            <span class="price-value">ريالين ونص (2.5 ر.س)</span>
+          </div>
+
+          <div class="actions">
+            <button class="btn primary" onclick="addToCart(productData[2])">أضف إلى السلة</button>
+            <button class="btn" onclick="showContactPrompt()">تواصل للشراء</button>
+          </div>
+        </div>
+      </article>
+
     </section>
   </main>
 
@@ -106,7 +140,7 @@
     <div class="modal-content">
       <h3>التواصل للشراء</h3>
       <p>لطلب الشراء: يرجى التواصل بالخاص. يمكنك نسخ الرسالة الجاهزة وإرسالها للبائع.</p>
-      <textarea id="contactMessage" rows="4" readonly>مرحباً، أود شراء غواصة استكشافية (سعر 2.5 ر.س). الرجاء التواصل معي على الخاص. شكراً.</textarea>
+      <textarea id="contactMessage" rows="4" readonly>مرحباً، أود شراء غواصة قراند (2.5 ر.س). الرجاء التواصل معي على الخاص لإتمام الشراء. شكراً.</textarea>
       <div class="cart-actions">
         <button class="btn" onclick="closeContact()">إغلاق</button>
         <button class="btn primary" onclick="copyContactMessage()">نسخ نص للتواصل</button>

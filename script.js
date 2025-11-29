@@ -13,6 +13,13 @@ const productData = [
     price: 2.5,
     displayPrice: 'ريالين ونص (2.5 ر.س)',
     qty: 1
+  },
+  {
+    id: 'sub-gtav',
+    title: 'غواصة قراند',
+    price: 2.5,
+    displayPrice: 'ريالين ونص (2.5 ر.س)',
+    qty: 1
   }
 ];
 
