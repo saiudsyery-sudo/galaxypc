@@ -1,153 +1,29 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>معرض الغواصات — سلة الشراء</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ستار غواصات</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <h1>معرض الغواصات</h1>
-    <p class="tagline">عرض قانوني تعليمي — صور ومواصفات وسلة شراء محلية</p>
-    <div class="cart-btn" id="cartBtn" title="عربة التسوق">
-      🛒 <span id="cartCount">0</span>
-    </div>
+    <h1>ستار غواصات</h1>
+    <p class="tagline">موقع مهمات الغواصة - قراند</p>
   </header>
-
   <main class="container">
-    <section class="products-grid">
-      <!-- منتج 1 -->
-      <article class="product-card">
-        <div class="product-gallery">
-          <img id="mainImage-1" class="mainImage" src="images/sub1.svg" alt="غواصة استكشافية" />
-          <div class="thumbs">
-            <img onclick="setMainImage('mainImage-1','images/sub1.svg')" src="images/sub1.svg" alt="صورة 1" />
-            <img onclick="setMainImage('mainImage-1','https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=240&auto=format&fit=crop" alt="صورة 2" />
-            <img onclick="setMainImage('mainImage-1','https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=240&auto=format&fit=crop" alt="صورة 3" />
-          </div>
-        </div>
-
-        <div class="product-info">
-          <h2 class="product-title">غواصة استكشافية نموذجية</h2>
-          <p class="product-desc">
-            غواصة للمحاكاة والعرض فقط — مواصفات افتراضية للاستخدام داخل الموقع والشرح التعليمي.
-          </p>
-
-          <ul class="specs">
-            <li><strong>الطاقم:</strong> 4 أشخاص</li>
-            <li><strong>المدى:</strong> 300 ميل بحري</li>
-            <li><strong>السرعة:</strong> 12 عقدة</li>
-            <li><strong>الحمولة:</strong> معدات استكشافية</li>
-          </ul>
-
-          <div class="price-row">
-            <span class="price-label">السعر:</span>
-            <span class="price-value">ريالين ونص (2.5 ر.س)</span>
-          </div>
-
-          <div class="actions">
-            <button class="btn primary" onclick="addToCart(productData[0])">أضف إلى السلة</button>
-            <button class="btn" onclick="showContactPrompt()">تواصل للشراء</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- منتج 2 -->
-      <article class="product-card">
-        <div class="product-gallery">
-          <img id="mainImage-2" class="mainImage" src="images/sub2.svg" alt="غواصة نموذجية 2" />
-          <div class="thumbs">
-            <img onclick="setMainImage('mainImage-2','images/sub2.svg')" src="images/sub2.svg" alt="صورة A" />
-            <img onclick="setMainImage('mainImage-2','https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=240&auto=format&fit=crop" alt="صورة B" />
-            <img onclick="setMainImage('mainImage-2','https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=240&auto=format&fit=crop" alt="صورة C" />
-          </div>
-        </div>
-
-        <div class="product-info">
-          <h2 class="product-title">غواصة عرض ثانية</h2>
-          <p class="product-desc">نسخة ثانية للعرض — نفس السعر التوضيحي.</p>
-          <ul class="specs">
-            <li><strong>الطاقم:</strong> 2-6</li>
-            <li><strong>المدى:</strong> 200 ميل بحري</li>
-          </ul>
-          <div class="price-row">
-            <span class="price-label">السعر:</span>
-            <span class="price-value">ريالين ونص (2.5 ر.س)</span>
-          </div>
-
-          <div class="actions">
-            <button class="btn primary" onclick="addToCart(productData[1])">أضف إلى السلة</button>
-            <button class="btn" onclick="showContactPrompt()">تواصل للشراء</button>
-          </div>
-        </div>
-      </article>
-
-      <!-- منتج 3: غواصة قراند -->
-      <article class="product-card">
-        <div class="product-gallery">
-          <img id="mainImage-3" class="mainImage" src="images/sub_gtav.svg" alt="غواصة قراند" />
-          <div class="thumbs">
-            <img onclick="setMainImage('mainImage-3','images/sub_gtav.svg')" src="images/sub_gtav.svg" alt="صورة غواصة قراند 1" />
-            <img onclick="setMainImage('mainImage-3','https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=240&auto=format&fit=crop" alt="صورة غواصة قراند 2" />
-            <img onclick="setMainImage('mainImage-3','https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop')" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=240&auto=format&fit=crop" alt="صورة غواصة قراند 3" />
-          </div>
-        </div>
-
-        <div class="product-info">
-          <h2 class="product-title">غواصة قراند</h2>
-          <p class="product-desc">غواصه تجيب لك فلوس — تستخدم في مهام Roleplay لزيادة أرباحك داخل اللعبة (عرض قانوني تعليمي).</p>
-
-          <ul class="specs">
-            <li><strong>الطاقم:</strong> 1-4</li>
-            <li><strong>أقصى عمق (تقديري):</strong> 300 متر</li>
-            <li><strong>السرعة تحت الماء:</strong> 8 عقدة (تقديري)</li>
-          </ul>
-
-          <div class="price-row">
-            <span class="price-label">السعر:</span>
-            <span class="price-value">ريالين ونص (2.5 ر.س)</span>
-          </div>
-
-          <div class="actions">
-            <button class="btn primary" onclick="addToCart(productData[2])">أضف إلى السلة</button>
-            <button class="btn" onclick="showContactPrompt()">تواصل للشراء</button>
-          </div>
-        </div>
-      </article>
-
+    <section class="hero">
+      <img src="images/grand_submarine.svg" alt="غواصة قراند" class="sub-image">
+      <div class="info">
+        <h2>مهمة الغواصة: قراند</h2>
+        <p class="price">سعر الغواصة: <strong>٢٫٥ ريال</strong></p>
+        <p class="description">اشترِ مهمة الغواصة "قراند" الآن عبر موقع ستار غواصات. العرض يشمل الصور والمهمة الجاهزة للتنفيذ.</p>
+        <a class="cta" href="mailto:orders@star-submarines.example?subject=طلب%20مهمة%20غواصة%20قراند">اطلب الآن</a>
+      </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <p>حقوق المحتوى © 2025 — معرض الغواصات. هذا عرض تعليمي فقط.</p>
+    <p>جميع الحقوق محفوظة © ستار غواصات</p>
   </footer>
-
-  <!-- عربة الشراء (محتوى ديناميكي) -->
-  <div id="cartModal" class="modal hidden">
-    <div class="modal-content">
-      <h3>عربة التسوق</h3>
-      <div id="cartItems"></div>
-      <div class="cart-actions">
-        <button class="btn" onclick="closeCart()">استمرار بالتسوق</button>
-        <button class="btn primary" onclick="checkout()">الدفع / تواصل للخاص</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- نافذة تواصل -->
-  <div id="contactModal" class="modal hidden">
-    <div class="modal-content">
-      <h3>التواصل للشراء</h3>
-      <p>لطلب الشراء: يرجى التواصل بالخاص. يمكنك نسخ الرسالة الجاهزة وإرسالها للبائع.</p>
-      <textarea id="contactMessage" rows="4" readonly>مرحباً، أود شراء غواصة قراند (2.5 ر.س). الرجاء التواصل معي على الخاص لإتمام الشراء. شكراً.</textarea>
-      <div class="cart-actions">
-        <button class="btn" onclick="closeContact()">إغلاق</button>
-        <button class="btn primary" onclick="copyContactMessage()">نسخ نص للتواصل</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffc857"/>
+      <stop offset="100%" stop-color="#ff9f1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="20" fill="#062426"/>
+  <!-- simple submarine illustration -->
+  <g transform="translate(40,120)">
+    <ellipse cx="360" cy="120" rx="320" ry="80" fill="#0f6b78"/>
+    <rect x="120" y="60" width="480" height="120" rx="60" fill="url(#g1)" opacity="0.95"/>
+    <circle cx="560" cy="120" r="34" fill="#04323a"/>
+    <rect x="640" y="96" width="80" height="48" rx="10" fill="#0b3b4a"/>
+    <rect x="20" y="116" width="80" height="16" rx="8" fill="#04323a"/>
+    <g fill="#021718" opacity="0.6">
+      <rect x="300" y="32" width="60" height="36" rx="8"/>
+      <rect x="368" y="32" width="60" height="36" rx="8"/>
+    </g>
+  </g>
+</svg>
