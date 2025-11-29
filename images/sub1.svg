@@ -1,0 +1,16 @@
+<!-- ملف SVG بسيط لصورة غواصة -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#031324"/>
+  <g transform="translate(40,80)">
+    <ellipse cx="280" cy="140" rx="220" ry="60" fill="#0b2b3a"/>
+    <rect x="60" y="60" width="380" height="80" rx="40" fill="#163b4b"/>
+    <circle cx="460" cy="120" r="36" fill="#0a3040"/>
+    <rect x="430" y="96" width="36" height="48" rx="8" fill="#1e90ff" opacity="0.12"/>
+    <g fill="#89d3ff" opacity="0.18">
+      <ellipse cx="220" cy="120" rx="18" ry="12"/>
+      <ellipse cx="260" cy="110" rx="12" ry="8"/>
+      <ellipse cx="300" cy="115" rx="10" ry="6"/>
+    </g>
+    <text x="40" y="30" font-family="Segoe UI, Tahoma, Arial" font-size="18" fill="#e6eef8">غواصة استكشافية</text>
+  </g>
+</svg>

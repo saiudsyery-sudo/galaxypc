@@ -1,0 +1,14 @@
+<!-- ملف SVG بسيط لصورة غواصة ثانية -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#021324"/>
+  <g transform="translate(40,70)">
+    <ellipse cx="280" cy="170" rx="200" ry="55" fill="#0f2a34"/>
+    <rect x="80" y="70" width="320" height="70" rx="35" fill="#13424f"/>
+    <circle cx="460" cy="115" r="28" fill="#08343f"/>
+    <g fill="#9fd8ff" opacity="0.14">
+      <ellipse cx="220" cy="120" rx="16" ry="10"/>
+      <ellipse cx="260" cy="112" rx="10" ry="6"/>
+    </g>
+    <text x="40" y="30" font-family="Segoe UI, Tahoma, Arial" font-size="18" fill="#e6eef8">غواصة عرض</text>
+  </g>
+</svg>
